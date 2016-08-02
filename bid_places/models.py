@@ -12,6 +12,8 @@ from django_utils.models import (
 class Place(StatusModel, TimeStampedModel):
     """ The place model
     """
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255, unique=True)
     categories = models.ManyToManyField('PlaceCategory', blank=True)
     objects = StatusManager()
 

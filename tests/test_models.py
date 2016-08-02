@@ -19,9 +19,13 @@ class TestBid_places(TestCase):
         pass
 
     def test_places(self):
-        Place.objects.create(name='foo')
+        """ Tests if the model creation method works with the minimum fields
+        """
+        Place.objects.create(title='foo')
 
     def test_place_categories(self):
+        """ Tests if the model creation method works with the minimum fields
+        """
         PlaceCategory.objects.create(title='foo')
 
     def tearDown(self):

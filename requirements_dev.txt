@@ -1,4 +1,4 @@
 bumpversion==0.5.3
 wheel==0.29.0
 django>=1.9.6
-django-model-utils>=2.0
+-e git://github.com/kayluhb/django-utils.git@1aa0ae7640e0ac8fa7530fdbd4194d021ea3e8bf#egg=django_utils-master

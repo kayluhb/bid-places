@@ -3,6 +3,6 @@ coverage==4.1
 mock>=1.0.1
 flake8>=2.1.0
 tox>=1.7.0
-django-model-utils>=2.0
+-e git://github.com/kayluhb/django-utils.git@1aa0ae7640e0ac8fa7530fdbd4194d021ea3e8bf#egg=django_utils-master
 
 # Additional test requirements go here
