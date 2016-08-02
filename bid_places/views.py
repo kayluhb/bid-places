@@ -1,64 +1,34 @@
 # -*- coding: utf-8 -*-
 from django.views.generic import (
-    CreateView,
-    DeleteView,
     DetailView,
-    UpdateView,
     ListView
 )
 
 from .models import (
-	Place,
-	PlaceCategory,
+    Place,
+    PlaceCategory,
 )
 
 
-class PlaceCreateView(CreateView):
-
-    model = Place
-
-
-class PlaceDeleteView(DeleteView):
-
-    model = Place
-
-
 class PlaceDetailView(DetailView):
-
-    model = Place
-
-
-class PlaceUpdateView(UpdateView):
-
+    """ A class for the PlaceDetailView
+    """
     model = Place
 
 
 class PlaceListView(ListView):
-
+    """ A class for the PlaceListView
+    """
     model = Place
 
 
-class PlaceCategoryCreateView(CreateView):
-
-    model = PlaceCategory
-
-
-class PlaceCategoryDeleteView(DeleteView):
-
-    model = PlaceCategory
-
-
 class PlaceCategoryDetailView(DetailView):
-
-    model = PlaceCategory
-
-
-class PlaceCategoryUpdateView(UpdateView):
-
+    """ A class for the PlaceCategoryDetailView
+    """
     model = PlaceCategory
 
 
 class PlaceCategoryListView(ListView):
-
+    """ A class for the PlaceCategoryListView
+    """
     model = PlaceCategory
-
